@@ -1,0 +1,95 @@
+h5{
+    background-color: aquamarine;
+}
+
+
+
+
+/* Justificar o texto dos paragrafos */
+p{
+    text-align: justify;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    background-color: rgb(138, 191, 226);
+
+}
+
+.bg-plum{
+
+    background-color: plum;
+}
+
+/* box model */
+#internship{
+
+    display: inline-block;
+    width: 240px;
+    height: 220px;
+    padding: 5px;
+    background-color: burlywood;
+    border: green solid;
+    text-align: left;
+    
+}
+
+#internship~div{
+
+    display: inline-block;
+    width: 240px;
+    height: 220px;
+    padding: 5px;
+    background-color: burlywood;
+    border: green solid;
+    text-align: left;
+    margin: 10px;
+    
+}
+
+#cesae-management{
+    text-align: center;
+}
+/* Por defeito (em mobile, se considerarmos mobile first, a imagem aparece escondida) */
+#my-image{
+    display: none;
+}
+
+/* media query */
+/* para prints */
+@media print {
+    nav{
+        display: none;
+    }
+
+    #cesae-management{
+    text-align: left;
+    }   
+}
+
+/* para tablets ou superiores */
+@media(min-width:1037px){
+    #my-image{
+        display: block;
+    }
+
+
+}
+/* ate 800px fica grenn */
+@media(min-width:800px) {
+    .bg-plum {
+        background-color: green;
+    }
+}
+ /* ate 1800px fica yellow  */
+@media(min-width:1800px) {
+    .bg-plum {
+        background-color: yellow;
+    }
+}
